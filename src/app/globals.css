@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --vetuo-navy: #0A355C;
+  --vetuo-gold: #E4AE49;
+}
+
+* { -webkit-tap-highlight-color: transparent; }
+
+/* Vetuo primary button – force white text */
+.vetuo-primary {
+  background: var(--vetuo-navy) !important;
+  color: #ffffff !important;
+}
+
+.vetuo-primary * {
+  color: #ffffff !important;
+}
+
+/* opcjonalnie: hover/active */
+.vetuo-primary:hover { filter: brightness(1.08); }
+.vetuo-primary:active { filter: brightness(0.95); }
+
